@@ -1,0 +1,284 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand:400,700");
+
+body {
+  background: #ebf5fb;
+  margin: 0;
+  padding: 0;
+  font-family: "QuickSand", sans-serif;
+}
+
+.wrapper {
+  width: 95%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+header {
+  background: #283747;
+  color: #ebebd3;
+  position: relative;
+  /* padding: 1em 0; */
+  padding-top: 1em;
+}
+
+header::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.logo {
+  float: left;
+  font-size: 1rem;
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.logo span {
+  font-weight: 400;
+}
+
+.main-nav {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  left: 0;
+  background: #464655;
+  height: 0;
+  overflow: hidden;
+}
+
+.main-nav-open {
+  height: auto;
+}
+
+.main-nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-nav li {
+  border-bottom: 1px solid #575766;
+}
+
+.main-nav li:last-child {
+  border-bottom: none;
+}
+
+.main-nav a {
+  color: white;
+  display: block;
+  padding: 1em 1em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.main-nav a:hover,
+.main-nav a:focus {
+  background: #e4b363;
+  color: #f1948a;
+}
+
+.nav-icon {
+  display: inline-block;
+  font-size: 1.3em;
+  margin-right: 0.5em;
+  text-align: center;
+  width: 1.1em;
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.menu-toggle {
+  padding: 1em;
+  position: absolute;
+  top: 0.5em;
+  right: 0.2em;
+  cursor: pointer;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  content: "";
+  display: block;
+  background: #ebebd3;
+  height: 3px;
+  width: 1.75em;
+  transition: all ease-in-out 500ms;
+}
+
+.hamburger::before {
+  transform: translateY(-6px);
+}
+
+.hamburger::after {
+  transform: translateY(3px);
+}
+
+.open .hamburger {
+  transform: rotate(45deg);
+}
+
+.open .hamburger::before {
+  opacity: 0;
+}
+
+.open .hamburger::after {
+  transform: rotate(90deg) translateY(3px);
+}
+
+.container {
+  width: 100%;
+  background-image: linear-gradient(95deg, #1c1b1ba1, rgb(0 0 0 / 50%)),
+    url("../images/banner2.jpg");
+  background-repeat: no-repeat;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-size: cover;
+  background-position: center;
+  /* position: relative; */
+}
+
+.page_container {
+  width: 100%;
+  height: 80%;
+  background-image: linear-gradient(95deg, #1c1b1ba1, rgb(0 0 0 / 30%)),
+    url("../images/banner1.jpg");
+  background-repeat: no-repeat;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-size: cover;
+  background-position: center;
+  /* position: relative; */
+}
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  padding: 150px;
+  color: #fff;
+  text-align: center;
+}
+
+h1 {
+  font-size: 34px;
+}
+.links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+button {
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 4px;
+  font-weight: bold;
+  background: #ec7063;
+}
+
+.banner_btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-right: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+  background-color: #ec7063; /* Green */
+  border-radius: 5px;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.banner_btn:hover {
+  background-color: #283747; /* Darker Green */
+}
+
+.cardf1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 350px;
+  background: #f8f9f9;
+  border-radius: 10px;
+  margin: 10px;
+  box-shadow: 0px 4px 8px 0px rgb(0, 0, 0, 0.4);
+}
+.box img {
+  object-fit: cover;
+  border-radius: 5px;
+  border-bottom-right-radius: 60px;
+  height: 200px;
+  width: 100%;
+}
+.des {
+  text-align: center;
+}
+
+.course_container {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  background-color: #283747;
+  text-align: center;
+  color: #fff;
+  padding: 0.2em;
+}
+
+@media only screen and (min-width: 700px) {
+  .menu-toggle {
+    display: none;
+  }
+
+  .main-nav {
+    height: auto;
+    position: relative;
+    background: transparent;
+    float: right;
+  }
+
+  .main-nav li {
+    display: inline-block;
+    border: none;
+  }
+
+  .main-nav a {
+    padding: 0;
+    margin-left: 2em;
+  }
+
+  .main-nav a:hover,
+  .main-nav a:focus {
+    background: transparent;
+  }
+
+  .nav-icon {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .content {
+    padding: 5px !important;
+    color: #fff;
+    text-align: center;
+    height: 50vh;
+  }
+}

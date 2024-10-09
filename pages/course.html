@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LearnMate | E-learning | Course</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <meta
+      name="description"
+      content="Embark on a journey of coding mastery with our online learning courses. Dive into programming languages, algorithms, and software development techniques. Start your coding adventure today"
+    />
+    <meta
+      name="keywords"
+      content="coding courses, online learning, programming languages, software development, coding tutorials, algorithmic thinking, coding skills"
+    />
+    <style>
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+      }
+
+      th,
+      td {
+        padding: 10px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+      }
+
+      th {
+        background-color: #283747;
+        font-weight: bold;
+        color: white;
+      }
+
+      .course_img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: auto;
+      }
+
+      @media only screen and (max-width: 600px) {
+        table,
+        thead,
+        tbody,
+        th,
+        td,
+        tr {
+          display: block;
+        }
+
+        thead tr {
+          position: absolute;
+          top: -9999px;
+          left: -9999px;
+        }
+
+        tr {
+          border: 1px solid #ccc;
+        }
+
+        td {
+          border: none;
+          border-bottom: 1px solid #eee;
+          position: relative;
+          padding-left: 50%;
+        }
+
+        td:before {
+          position: absolute;
+          top: 6px;
+          left: 6px;
+          width: 45%;
+          padding-right: 10px;
+          white-space: nowrap;
+        }
+
+        td:nth-of-type(1):before {
+          content: "Name";
+        }
+
+        td:nth-of-type(2):before {
+          content: "Description";
+        }
+
+        td:nth-of-type(3):before {
+          content: "Get Started";
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="wrapper">
+        <a href="../index.html"
+          ><img src="../images/logo.png" alt="logo" width="180px" height="50px"
+        /></a>
+        <nav class="main-nav">
+          <ul>
+            <li>
+              <a href="../index.html"
+                ><i class="fa fa-home nav-icon"></i>Home</a
+              >
+            </li>
+            <li>
+              <a href="./about.html"
+                ><i class="fa fa-info nav-icon"></i>About</a
+              >
+            </li>
+            <li>
+              <a href="./liveclass.html"
+                ><i class="fa fa-solid fa-laptop nav-icon"></i>Book Live
+                Class</a
+              >
+            </li>
+            <li>
+              <a href="./contact.html"
+                ><i class="fa fa-envelope nav-icon"></i>Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <div class="menu-toggle">
+          <div class="hamburger"></div>
+        </div>
+      </div>
+    </header>
+    <section class="page_container">
+      <div class="banner">
+        <div class="content">
+          <h1>
+            <span style="color: #e74c3c">LearnMate</span>: Empowering Minds,
+            Inspiring Futures
+          </h1>
+          <p>Course Page</p>
+        </div>
+      </div>
+    </section>
+    <section style="text-align: center">
+      <h1>List of courses</h1>
+      <table class="course_container">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Get Started</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <img
+                class="course_img"
+                src="../images/top-img-1.jpg"
+                alt="Course Thumbnail"
+              />
+            </td>
+            <td>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Vestibulum sagittis mauris et urna posuere, id maximus odio porta.
+            </td>
+            <td><a href="#" class="banner_btn">Start</a></td>
+          </tr>
+          <tr>
+            <td>
+              <img
+                class="course_img"
+                src="../images/top-img-2.png"
+                alt="Course Thumbnail"
+              />
+            </td>
+            <td>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Vestibulum sagittis mauris et urna posuere, id maximus odio porta.
+            </td>
+            <td><a href="#" class="banner_btn">Start</a></td>
+          </tr>
+          <tr>
+            <td>
+              <img
+                class="course_img"
+                src="../images/top-img-3.png"
+                alt="Course Thumbnail"
+              />
+            </td>
+            <td>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Vestibulum sagittis mauris et urna posuere, id maximus odio porta.
+            </td>
+            <td><a href="#" class="banner_btn">Start</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <footer>
+      <p>
+        &copy;
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        LearnMate
+      </p>
+    </footer>
+    <script>
+      $(window).ready(function () {
+        $(".menu-toggle").click(function () {
+          //console.log(2);
+          $(".main-nav").toggleClass("main-nav-open", 500);
+          $(this).toggleClass("open");
+        });
+      });
+    </script>
+  </body>
+</html>
